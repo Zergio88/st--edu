@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="shortcut icon" href="../IMG/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <title> ST - Educ.ar S.E. </title>
+        <!-- Bootstrap 4 -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="
+        sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+          <!-- Bootstrap 4 offline -->
+        <link href="../BOOTSTRAP4/css/bootstrap.css" rel="stylesheet" />
+        <script src="../BOOTSTRAP4/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background:#CCC;">    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 m-auto">
+                    <div class="card bg-dark mt-5">
+                        <div class="card-title bg-primary text-white mt-5">
+                            <h3 class="text-center py-3"> ST - Educ.ar S.E. </h3>
+                        </div>
+     
+                        <?php 
+                            if(@$_GET['Empty']==true)
+                            {
+                        ?>
+                            <div class="alert-light text-danger text-center py-3"><?php echo $_GET['Empty'] ?></div>                                
+                        <?php
+                            }
+                        ?>
+     
+     
+                        <?php 
+                            if(@$_GET['Invalid']==true)
+                            {
+                        ?>
+                            <div class="alert-light text-danger text-center py-3"><?php echo $_GET['Invalid'] ?></div>                                
+                        <?php
+                            }
+                        ?>
+     
+                        <div class="card-body">
+                            <form action="process.php" method="post">
+                                <input type="text" name="UName" placeholder=" User Name" class="form-control mb-3">
+                                <input type="password" name="Password" placeholder=" Password" class="form-control mb-3">
+                                <button class="btn btn-primary mt-3" name="Login">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     
+    </body>
+</html>

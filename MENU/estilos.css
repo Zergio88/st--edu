@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+	background: #CCC;
+}
+
+
+.navegacion{
+	width: 90%;
+	margin: auto;
+	/*margin: 30px auto;*/
+	/*background: #fff;*/
+	background: #3498db;
+}
+
+.navegacion ul{
+	list-style: none;
+	overflow: hidden;
+}
+
+.menu > li{
+	/*position: relative;*/
+	padding: 5px 30px;
+	display: inline-block;
+	color: #FEFEFE;
+}
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	/*color: #353535;*/
+	color: #fff;
+	font-family: _'Open sans'_;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	/*color: #CE7D35;*/
+	color: #2980b9;
+	transition: all .3s;
+}
+
+/* Submenu*/
+.submenu_Netbooks{
+	position: absolute;
+	background: 333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu_Netbooks li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: _'Open sans'_;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu_Netbooks{
+	visibility: visible;
+	opacity: 1;	
+}
+
+.submenu_srv{
+	position: absolute;
+	background: 333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu_srv li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: _'Open sans'_;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu_srv{
+	visibility: visible;
+	opacity: 1;	
+}
+
+.submenu_Ingreso{
+	position: absolute;
+	background: 333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu_Ingreso li a{
+	display: block;
+	padding: 15px;
+	color:#FEFEFE;
+	/*color: #fff;*/
+	font-family: _'Open sans'_;
+	text-decoration: none;
+}
+
+.menu li:hover .submenu_Ingreso{
+	visibility: visible;
+	opacity: 1;	
+}

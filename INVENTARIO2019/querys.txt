@@ -1,0 +1,1 @@
+SELECT * FROM `bienes_escaneados` WHERE pallet = "p001" ORDER BY fecha DESC 
